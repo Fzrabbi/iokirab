@@ -28,5 +28,8 @@ Route::group([
     Route::get('/user-profile', [AuthController::class, 'userProfile']);   
      
     Route::post('/serve-data', [ServeDataController::class, 'serveData']);   
-
+    Route::get('/trigger/{data}', function ($data) {
+	    echo "<p>You have sent $data.</p>";
+	    event(new App\Events\GetRequestEvent($data));
+	});
 });
