@@ -1,4 +1,4 @@
-<p align="center">How to run</p>
+<h1 align="center">How to run</h1>
 <p>Step 1. cp .env.example .env</p>
 <p>Step 2. change (BROADCAST_DRIVER=pusher and pusher config) in .env</p>
 <p>Step 3. run ‘php artisan migrate’</p>
